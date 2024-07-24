@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Difficulty Remover",
+  "version": "1.0",
+  "description": "Removes difficulty tag from unsolved problems",
+  "author": "Sai Chandan Mohanty (saichandan68@gmail.com)",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "download.png",
+    "48": "download.png",
+    "128": "download.png"
+  }
+}
